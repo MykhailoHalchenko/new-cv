@@ -7,130 +7,141 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
+      font-size: 11pt;
+      line-height: 1.5;
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
       color: #000000;
     }
     h1 {
-      color: #000000;
-      border-bottom: 2px solid #000000;
-      padding-bottom: 10px;
+      font-size: 18pt;
+      font-weight: bold;
+      margin-bottom: 5px;
+      text-align: center;
     }
     h2 {
-      color: #000000;
+      font-size: 14pt;
+      font-weight: bold;
       border-bottom: 1px solid #000000;
-      padding-bottom: 5px;
-      margin-top: 25px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      padding-bottom: 3px;
     }
     h3 {
+      font-size: 12pt;
+      font-weight: bold;
       margin-bottom: 5px;
-      color: #000000;
-    }
-    .header {
-      text-align: center;
-      margin-bottom: 20px;
     }
     .contact-info {
+      text-align: center;
       margin-bottom: 15px;
     }
     ul {
       padding-left: 20px;
+      margin-top: 5px;
     }
     li {
       margin-bottom: 5px;
     }
+    .job-header {
+      margin-bottom: 5px;
+    }
     .job-title {
       font-weight: bold;
-      display: inline-block;
     }
     .company {
       font-style: italic;
-      display: inline-block;
     }
     .date {
       float: right;
-      color: #000000;
     }
-    .skills-category {
-      margin-bottom: 15px;
+    .skills-list {
+      columns: 2;
+      column-gap: 40px;
     }
-    a {
-      color: #000000;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+    @media print {
+      body {
+        font-size: 10pt;
+        padding: 10px;
+      }
+      .skills-list {
+        columns: 2;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="header">
-    <h1>Mykhailo Halchenko</h1>
-    <div class="contact-info">
-      <p>Kyiv, Ukraine | mobile: +380 96 606 7870 email: jonesobrien849@gmail.com</p>
-      <p>Languages: Ukrainian (native), Russian (native), English (B2), French (B1)</p>
-    </div>
+  <h1>Mykhailo Halchenko</h1>
+  <div class="contact-info">
+    <p>Kyiv, Ukraine | mobile: +380 96 606 7870 email: jonesobrien849@gmail.com | Ukrainian (native), Russian (native), English (B2), French (B1)</p>
   </div>
 
-  <section>
-    <h2>Professional Summary</h2>
-    <p>Telecommunications engineering student with hands-on experience in wireless networks and networking. Skilled in network design, configuration, and security protocols. Seeking an entry-level or internship position in telecommunications or network engineering to apply technical skills to real-world projects.</p>
-  </section>
+  <h2>Professional Summary</h2>
+  <p>Telecommunications engineering student with hands-on experience in wireless networks and networking. Skilled in network design, configuration, and security protocols. Seeking an entry-level position in telecommunications or network engineering.</p>
 
-  <section>
-    <h2>Technical Skills</h2>
-    <div class="skills-category">
-      <h3>Networking</h3>
-      <p>IP, OSI, TCP/IP, VLAN, OSPF, BGP, WLAN (802.11), Huawei eNSP, Cisco Packet Tracer, GNS3</p>
-    </div>
-    <div class="skills-category">
-      <h3>Telecommunications</h3>
-      <p>BSC/RNC/BTS, GSM, WCDMA, LTE, NR, RF principles, base station planning</p>
-    </div>
-    <div class="skills-category">
-      <h3>Security</h3>
-      <p>Firewalls, WLAN Security, Network Hardening, Mitigating Network Attacks</p>
-    </div>
-    <div class="skills-category">
-      <h3>Programming</h3>
-      <p>Python (numpy, scapy), C/C++, x86 Assembler</p>
-    </div>
-    <div class="skills-category">
-      <h3>DevOps & Cloud</h3>
-      <p>Docker, Kubernetes, Terraform, Ansible, Huawei Cloud, Google Cloud Platform</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Professional Experience</h2>
-    <div>
-      <h3><span class="job-title">Huawei Dual Education Program</span> - <span class="company">Huawei Ukraine</span> <span class="date">Feb 2025 - Apr 2025</span></h3>
-      <ul>
-        <li>Studied GSM/UMTS/LTE network architecture and base station planning</li>
-        <li>Worked with Huawei BTS3900/BTS5900 equipment for LTE/5G system design</li>
-        <li>Configured IP-based networks and enterprise datacom systems</li>
-        <li>Gained practical knowledge of Huawei IT infrastructure and data center technologies</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <div>
-      <h3><span class="job-title">Bachelor's Degree in Telecommunications and Radio Engineering</span> - <span class="company">State University "Kyiv Aviation Institute"</span> <span class="date">Sept 2023 - Present</span></h3>
-      <p>Specialization: Telecommunication and Radio Engineering</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Certifications</h2>
+  <h2>Technical Skills</h2>
+  <div class="skills-list">
+    <h3>Networking</h3>
     <ul>
-      <li>HCIA-Datacom - Huawei Certified ICT Associate, 2024</li>
-      <li>HCIA-WLAN - Huawei Certified ICT Associate, 2025</li>
-      <li>Junior Cybersecurity Analyst Career Path - Cisco, 2025</li>
+      <li>IP, TCP/IP, VLAN, OSPF, BGP</li>
+      <li>WLAN (802.11), Huawei eNSP</li>
+      <li>Cisco Packet Tracer, GNS3</li>
     </ul>
-  </section>
+    
+    <h3>Telecommunications</h3>
+    <ul>
+      <li>BSC/RNC/BTS, GSM, WCDMA</li>
+      <li>LTE, NR, RF principles</li>
+      <li>Base station planning</li>
+    </ul>
+    
+    <h3>Security</h3>
+    <ul>
+      <li>Firewalls, WLAN Security</li>
+      <li>Network Hardening</li>
+      <li>Mitigating Network Attacks</li>
+    </ul>
+    
+    <h3>Programming</h3>
+    <ul>
+      <li>Python (numpy, scapy)</li>
+      <li>C/C++, x86 Assembler</li>
+    </ul>
+    
+    <h3>DevOps & Cloud</h3>
+    <ul>
+      <li>Docker, Kubernetes</li>
+      <li>Terraform, Ansible</li>
+      <li>Huawei Cloud, Google Cloud</li>
+    </ul>
+  </div>
+
+  <h2>Professional Experience</h2>
+  <div class="job-header">
+    <span class="job-title">Huawei Dual Education Program</span> - 
+    <span class="company">Huawei Ukraine</span>
+    <span class="date">Feb 2025 - Apr 2025</span>
+  </div>
+  <ul>
+    <li>Studied GSM/UMTS/LTE network architecture and base station planning</li>
+    <li>Worked with Huawei BTS3900/BTS5900 equipment for LTE/5G system design</li>
+    <li>Configured IP-based networks and enterprise datacom systems</li>
+  </ul>
+
+  <h2>Education</h2>
+  <div class="job-header">
+    <span class="job-title">Bachelor's Degree in Telecommunications and Radio Engineering</span> - 
+    <span class="company">State University "Kyiv Aviation Institute"</span>
+    <span class="date">Sept 2023 - Present</span>
+  </div>
+  <p>Specialization: Telecommunication and Radio Engineering</p>
+
+  <h2>Certifications</h2>
+  <ul>
+    <li>HCIA-Datacom - Huawei Certified ICT Associate, 2024</li>
+    <li>HCIA-WLAN - Huawei Certified ICT Associate, 2025</li>
+    <li>Junior Cybersecurity Analyst Career Path - Cisco, 2025</li>
+  </ul>
 </body>
 </html>
